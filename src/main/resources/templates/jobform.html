@@ -15,6 +15,9 @@
     Employer :<input type="text" th:field="*{employer}" />
     <span th:if="${#fields.hasErrors('employer')}"
           th:errors="*{employer}"></span></span><br />
+    Description :<textarea rows="3" th:field="*{description}" />
+    <span th:if="${#fields.hasErrors('description')}"
+          th:errors="*{description}"></span></span><br />
     <br />
     <input type="submit" value="Submit" />
 </form>
